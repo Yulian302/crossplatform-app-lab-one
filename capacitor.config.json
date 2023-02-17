@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "CrossplatformAppLabOne",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

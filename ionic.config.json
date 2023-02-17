@@ -1,0 +1,8 @@
+{
+  "name": "CrossplatformAppLabOne",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "94e1d930"
+}
