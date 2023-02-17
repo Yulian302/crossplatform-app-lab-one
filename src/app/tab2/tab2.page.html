@@ -1,17 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Лабораторна робота 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-toolbar>
+  <ion-title>
+    Виконав студент групи КН-31/1 Богомол Юліан
+  </ion-title>
+</ion-toolbar>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Завдання 2
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p-task">На заданому проміжку чисел [a,b] знайти суму всіх, які кратні 11 та при діленні на 8 дають в остачі 5.</p>
+      <ion-item>
+        <ion-label position="floating">a:</ion-label>
+        <ion-input type="number" id="a" value="1" #Inputa></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">b:</ion-label>
+        <ion-input type="number" id="b" value="2" #Inputb></ion-input>
+      </ion-item>
+    <ion-button extend="block" (click)="get_sum(Inputa.value,Inputb.value)">Обчислити</ion-button>
+    <ion-item>
+      <p>Результат обчислення: {{res}}</p>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+   <ion-footer> 
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title>Лабораторна робота 1</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+   </ion-footer>
 </ion-content>

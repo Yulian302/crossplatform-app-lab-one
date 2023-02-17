@@ -1,17 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Лабораторна робота 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-toolbar>
+  <ion-title>
+    Виконав студент групи КН-31/1 Богомол Юліан
+  </ion-title>
+</ion-toolbar>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Завдання 1
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p-task">Задано три числа. Знайти суму кубів тих з них, які кратні 7.</p>
+      <ion-item>
+        <ion-label position="floating">Число 1</ion-label>
+        <ion-input type="number" id="x" value="1" #InputX></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Число 2</ion-label>
+        <ion-input type="number" id="y" value="2" #InputY></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Число 3</ion-label>
+        <ion-input type="number" id="z" value="3" #InputZ></ion-input>
+      </ion-item>
+    <ion-button extend="block" (click)="calculate(InputX.value,InputY.value,InputZ.value)">Обчислити</ion-button>
+    <ion-item>
+      <p>Результат обчислення {{res}}</p>
+    </ion-item>
+  </ion-card-content>
+</ion-card>
+   <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title>Лабораторна робота 1</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+   </ion-footer>
 </ion-content>

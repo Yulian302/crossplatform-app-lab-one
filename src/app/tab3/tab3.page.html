@@ -1,17 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Лабораторна робота 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
+<ion-toolbar>
+  <ion-title>
+    Виконав студент групи КН-31/1 Богомол Юліан
+  </ion-title>
+</ion-toolbar>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Завдання 3
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="p-task">Згенерувати матрицю розміром NxN. Знайти максимальне значення (позначити зеленим) та мінімальне
+        (позначити синім).</p>
+      <ion-item>
+        <ion-label position="floating">N:</ion-label>
+        <ion-input type="number" id="n" #Inputn></ion-input>
+      </ion-item>
+      <!-- <ion-button extend="block" (click)="generateMatrix(Inputn.value)">Згенерувати матрицю</ion-button> -->
+      <ion-item>
+        <p>Результат:</p>
+      </ion-item>
+      <ion-item>
+        <!-- <ion-grid>
+          <ion-row *ngFor="let i of n">
+            <ion-col *ngFor="let j of i" [ngStyle]="{backgroundColor: getColor(j)}">{{ j }}</ion-col>
+          </ion-row>
+        </ion-grid> -->
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-footer>
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title>Лабораторна робота 1</ion-title>
     </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  </ion-footer>
 </ion-content>
