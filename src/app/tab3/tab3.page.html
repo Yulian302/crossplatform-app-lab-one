@@ -24,16 +24,13 @@
         <ion-label position="floating">N:</ion-label>
         <ion-input type="number" id="n" #Inputn></ion-input>
       </ion-item>
-      <!-- <ion-button extend="block" (click)="generateMatrix(Inputn.value)">Згенерувати матрицю</ion-button> -->
+      <ion-button extend="block" (click)="generateMatrix(Inputn.value)">Згенерувати матрицю</ion-button>
       <ion-item>
-        <p>Результат:</p>
-      </ion-item>
-      <ion-item>
-        <!-- <ion-grid>
-          <ion-row *ngFor="let i of n">
+        <ion-grid>
+          <ion-row *ngFor="let i of matrix">
             <ion-col *ngFor="let j of i" [ngStyle]="{backgroundColor: getColor(j)}">{{ j }}</ion-col>
           </ion-row>
-        </ion-grid> -->
+        </ion-grid>
       </ion-item>
     </ion-card-content>
   </ion-card>
