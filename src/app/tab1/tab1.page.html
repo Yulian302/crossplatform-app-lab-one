@@ -4,6 +4,13 @@
       Лабораторна робота 1
     </ion-title>
   </ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Лабораторні роботи
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 <ion-toolbar>
   <ion-title>
@@ -31,15 +38,15 @@
         <ion-label position="floating">Число 3</ion-label>
         <ion-input type="number" id="z" value="3" #InputZ></ion-input>
       </ion-item>
-    <ion-button extend="block" (click)="calculate(InputX.value,InputY.value,InputZ.value)">Обчислити</ion-button>
-    <ion-item>
-      <p>Результат обчислення {{res}}</p>
-    </ion-item>
-  </ion-card-content>
-</ion-card>
-   <ion-footer>
+      <ion-button extend="block" (click)="calculate(InputX.value,InputY.value,InputZ.value)">Обчислити</ion-button>
+      <ion-item>
+        <p>Результат обчислення {{res}}</p>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-footer>
     <ion-toolbar>
       <ion-title>Лабораторна робота 1</ion-title>
     </ion-toolbar>
-   </ion-footer>
+  </ion-footer>
 </ion-content>
